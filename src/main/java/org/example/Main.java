@@ -17,18 +17,18 @@ public class Main {
     Teacher t4 = new Teacher("Mr. Herbert", "Foreignlanguage");
 
     Department d1 = new Department("Math");
-    d1.addDeptTeacher((Teacher) t1);
-    d1.addDeptTeacher((Teacher) t2);
+    d1.addDeptTeacher(t1);
+    d1.addDeptTeacher(t2);
     d1.addDeptStudent(s4);
     d1.addDeptStudent(s5);
     d1.addDeptStudent(s6);
 
     Department d2 = new Department("SocialStudies");
-    d2.addDeptTeacher((Teacher) t3);
-    d2.addDeptTeacher((Teacher) t4);
-    d2.addDeptStudent((Student) s1);
-    d2.addDeptStudent((Student) s2);
-    d2.addDeptStudent((Student) s3);
+    d2.addDeptTeacher(t3);
+    d2.addDeptTeacher(t4);
+    d2.addDeptStudent(s1);
+    d2.addDeptStudent(s2);
+    d2.addDeptStudent(s3);
 
     School sc1 = new School("Shermer High School");
     sc1.addDepartment(d1);

@@ -49,6 +49,6 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Name:"+name+"\n"+"Subject:"+subject;
+        return "Name:"+getName()+"\n"+"Subject:"+getSubject();
     }
 }
