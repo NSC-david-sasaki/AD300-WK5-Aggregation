@@ -10,6 +10,7 @@ public class Teacher {
         if (!name.isEmpty()) {
             this.name = name;
         }
+        else throw new IllegalArgumentException("Empty name");
 
         if (this.isSubject(subject)){
             this.subject = subject;
@@ -22,19 +23,19 @@ public class Teacher {
             return false;
         }
         List<String> subjects = new ArrayList<>();
-        subjects.add("math");
+        subjects.add("geometry");
         subjects.add("science");
         subjects.add("english");
         subjects.add("history");
         subjects.add("geography");
-        subjects.add("physicaleducation");
+        subjects.add("physical education");
         subjects.add("art");
         subjects.add("music");
-        subjects.add("socialstudies");
+        subjects.add("social studies");
         subjects.add("economics");
-        subjects.add("computerscience");
-        subjects.add("healtheducation");
-        subjects.add("foreignlanguage");
+        subjects.add("computer science");
+        subjects.add("health education");
+        subjects.add("foreign language");
 
         return subjects.contains(subject.toLowerCase());
     }
@@ -49,6 +50,6 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Name:"+getName()+"\n"+"Subject:"+getSubject();
+        return getName()+" ("+getSubject()+")";
     }
 }

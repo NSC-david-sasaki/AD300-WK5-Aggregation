@@ -26,6 +26,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Name:"+getName()+"\n"+"Grade Level:"+getGradeLevel();
+        return getName()+" (Grade "+getGradeLevel()+")";
     }
 }
